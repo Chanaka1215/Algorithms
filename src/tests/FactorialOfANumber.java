@@ -3,6 +3,9 @@ package tests;
 import java.math.BigInteger;
 import java.util.Scanner;
 
+import common.AlgorithmType;
+import common.TestRunner;
+
 public class FactorialOfANumber implements TestRunner
 {
   /**
@@ -23,6 +26,7 @@ public class FactorialOfANumber implements TestRunner
 
     System.out.println("Factorial of " +number + "  is " + fact);
     usingBigInteger(number);
+    sc.close();
   }
 
   private void usingBigInteger(final int number){
@@ -35,8 +39,8 @@ public class FactorialOfANumber implements TestRunner
   }
 
   @Override
-  public AlgorithmTypeId getId() {
-    return AlgorithmTypeId.FIND_FACTORIAL;
+  public AlgorithmType getId() {
+    return AlgorithmType.FIND_FACTORIAL;
   }
 
   @Override

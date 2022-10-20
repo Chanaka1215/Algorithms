@@ -2,7 +2,11 @@ package tests;
 
 import java.util.Scanner;
 
-public class EvenOdd implements TestRunner {
+import common.AlgorithmType;
+import common.TestRunner;
+
+public class EvenOdd implements TestRunner
+{
     @Override
     public void run() {
         Scanner scanner = new Scanner(System.in);
@@ -14,13 +18,13 @@ public class EvenOdd implements TestRunner {
     }
 
     @Override
-    public AlgorithmTypeId getId() {
-        return AlgorithmTypeId.EVEN_ODD;
+    public AlgorithmType getId() {
+        return AlgorithmType.EVEN_ODD;
     }
 
     @Override
     public void printDetails() {
-        System.out.println("Name:: " + AlgorithmTypeId.EVEN_ODD.getName());
-        System.out.println("Name:: " + AlgorithmTypeId.EVEN_ODD.getURL());
+        System.out.println("Name:: " + getId().getName());
+        System.out.println("Name:: " + getId().getURL());
     }
 }

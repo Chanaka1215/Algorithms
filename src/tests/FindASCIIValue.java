@@ -1,8 +1,11 @@
 package tests;
 
 import java.util.Scanner;
+import common.AlgorithmType;
+import common.TestRunner;
 
-public final class FindASCIIValue implements TestRunner {
+public final class FindASCIIValue implements TestRunner
+{
 
     @Override
     public void run() {
@@ -10,16 +13,17 @@ public final class FindASCIIValue implements TestRunner {
         System.out.println("Please enter a character...");
         String character = scanner.nextLine();
         System.out.println("ASCII value of " + character.charAt(0) + " is " + (int) character.charAt(0));
+        scanner.close();
     }
 
     @Override
-    public AlgorithmTypeId getId() {
-        return AlgorithmTypeId.FIND_ASCII_VALUE_OF_A_CHARACTER;
+    public AlgorithmType getId() {
+        return AlgorithmType.FIND_ASCII_VALUE_OF_A_CHARACTER;
     }
 
     @Override
     public void printDetails() {
-        System.out.println("name:: "+ AlgorithmTypeId.FIND_ASCII_VALUE_OF_A_CHARACTER.getName());
-        System.out.println("Link:: " + AlgorithmTypeId.FIND_ASCII_VALUE_OF_A_CHARACTER.getURL());
+        System.out.println("name:: " + getId().getName());
+        System.out.println("Link:: " + getId().getURL());
     }
 }

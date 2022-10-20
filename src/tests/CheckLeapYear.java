@@ -2,7 +2,11 @@ package tests;
 
 import java.util.Scanner;
 
-public class CheckLeapYear implements TestRunner{
+import common.AlgorithmType;
+import common.TestRunner;
+
+public class CheckLeapYear implements TestRunner
+{
     @Override
     public void run() {
         /*
@@ -18,11 +22,12 @@ public class CheckLeapYear implements TestRunner{
             isLeapYear = true;
         }
         System.out.println("Year: " + year +" is a leapYear " + String.valueOf(isLeapYear));
+        sc.close();
     }
 
     @Override
-    public AlgorithmTypeId getId() {
-        return AlgorithmTypeId.FIND_LEAP_YEAR;
+    public AlgorithmType getId() {
+        return AlgorithmType.FIND_LEAP_YEAR;
     }
 
     @Override

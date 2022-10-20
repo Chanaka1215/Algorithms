@@ -1,8 +1,9 @@
 package tests;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
+
+import common.AlgorithmType;
+import common.TestRunner;
 
 public class DisplayFibonacciSeries implements TestRunner
 {
@@ -28,11 +29,12 @@ public class DisplayFibonacciSeries implements TestRunner
       System.out.print(thirdTerm+", ");
     }
 
+    sc.close();
   }
 
   @Override
-  public AlgorithmTypeId getId() {
-    return AlgorithmTypeId.DISPLAY_FIBONACCI;
+  public AlgorithmType getId() {
+    return AlgorithmType.DISPLAY_FIBONACCI;
   }
 
   @Override

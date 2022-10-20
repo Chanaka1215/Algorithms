@@ -1,8 +1,10 @@
-package tests;
+package common;
+
+import common.AlgorithmType;
 
 public interface TestRunner {
     void run();
-     AlgorithmTypeId getId();
+     AlgorithmType getId();
 
      void printDetails();
 }

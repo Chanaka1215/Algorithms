@@ -2,6 +2,9 @@ package tests;
 
 import java.util.Scanner;
 
+import common.AlgorithmType;
+import common.TestRunner;
+
 public class LCMOfTwoNumber implements TestRunner
 {
 
@@ -38,9 +41,9 @@ public class LCMOfTwoNumber implements TestRunner
 
   }
 
-  @Override public AlgorithmTypeId getId()
+  @Override public AlgorithmType getId()
   {
-    return AlgorithmTypeId.LEAST_COMMON_MULTIPLE;
+    return AlgorithmType.LEAST_COMMON_MULTIPLE;
   }
 
   @Override public void printDetails()

@@ -2,7 +2,11 @@ package tests;
 
 import java.util.Scanner;
 
-public class QuotientAndRemainder implements TestRunner{
+import common.AlgorithmType;
+import common.TestRunner;
+
+public class QuotientAndRemainder implements TestRunner
+{
     @Override
     public void run() {
         final Scanner scanner = new Scanner(System.in);
@@ -16,13 +20,13 @@ public class QuotientAndRemainder implements TestRunner{
     }
 
     @Override
-    public AlgorithmTypeId getId() {
-        return AlgorithmTypeId.FIND_QUITIENT_ANDREMAINDER;
+    public AlgorithmType getId() {
+        return AlgorithmType.FIND_QUITIENT_ANDREMAINDER;
     }
 
     @Override
     public void printDetails() {
-        System.out.println("name:: "+ AlgorithmTypeId.FIND_QUITIENT_ANDREMAINDER.getName());
-        System.out.println("Link:: " + AlgorithmTypeId.FIND_QUITIENT_ANDREMAINDER.getURL());
+        System.out.println("name:: " + AlgorithmType.FIND_QUITIENT_ANDREMAINDER.getName());
+        System.out.println("Link:: " + AlgorithmType.FIND_QUITIENT_ANDREMAINDER.getURL());
     }
 }

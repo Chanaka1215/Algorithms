@@ -2,6 +2,9 @@ package tests;
 
 import java.util.Scanner;
 
+import common.AlgorithmType;
+import common.TestRunner;
+
 public class GCDOfTwoNumbers implements TestRunner
 {
   @Override public void run()
@@ -18,11 +21,12 @@ public class GCDOfTwoNumbers implements TestRunner
 
     }
     System.out.println("GCD of " + number1 + " and "+ number2 +" is " + gcd);
+    scanner.close();
   }
 
-  @Override public AlgorithmTypeId getId()
+  @Override public AlgorithmType getId()
   {
-    return AlgorithmTypeId.GRATEST_COMMON_DIVISOR;
+    return AlgorithmType.GRATEST_COMMON_DIVISOR;
   }
 
   @Override public void printDetails()
