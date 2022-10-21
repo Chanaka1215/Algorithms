@@ -3,9 +3,9 @@ package tests;
 import java.util.Scanner;
 
 import common.AlgorithmType;
-import common.TestRunner;
+import common.BaseTestRunner;
 
-public class DisplayFibonacciSeries implements TestRunner
+public class DisplayFibonacciSeries extends BaseTestRunner
 {
   /**
    * The Fibonacci series is a series where the next term is the sum of the previous two terms.
@@ -16,6 +16,8 @@ public class DisplayFibonacciSeries implements TestRunner
   @Override
   public void run()
   {
+    printDetails();
+
     final Scanner sc = new Scanner(System.in);
     System.out.println("Please input a number");
     final int number = sc.nextInt();
@@ -35,11 +37,5 @@ public class DisplayFibonacciSeries implements TestRunner
   @Override
   public AlgorithmType getId() {
     return AlgorithmType.DISPLAY_FIBONACCI;
-  }
-
-  @Override
-  public void printDetails() {
-    System.out.println("name:: " + getId().getName());
-    System.out.println("Link:: " + getId().getURL());
   }
 }

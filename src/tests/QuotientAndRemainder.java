@@ -3,12 +3,15 @@ package tests;
 import java.util.Scanner;
 
 import common.AlgorithmType;
+import common.BaseTestRunner;
 import common.TestRunner;
 
-public class QuotientAndRemainder implements TestRunner
+public class QuotientAndRemainder extends BaseTestRunner
 {
     @Override
     public void run() {
+        printDetails();
+
         final Scanner scanner = new Scanner(System.in);
         System.out.println("Please input dividend...");
         final int dividend = scanner.nextInt();
@@ -24,9 +27,4 @@ public class QuotientAndRemainder implements TestRunner
         return AlgorithmType.FIND_QUITIENT_ANDREMAINDER;
     }
 
-    @Override
-    public void printDetails() {
-        System.out.println("name:: " + AlgorithmType.FIND_QUITIENT_ANDREMAINDER.getName());
-        System.out.println("Link:: " + AlgorithmType.FIND_QUITIENT_ANDREMAINDER.getURL());
-    }
 }

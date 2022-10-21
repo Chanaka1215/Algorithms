@@ -9,7 +9,12 @@ public enum AlgorithmType {
     FIND_FACTORIAL("Find Factorial of a Number", "https://www.programiz.com/java-programming/examples/factorial"),
     DISPLAY_FIBONACCI("Display Fibonacci Series", "https://www.programiz.com/java-programming/examples/fibonacci-series"),
     GRATEST_COMMON_DIVISOR("Gratast Common Divisor of two numbers", "https://www.programiz.com/java-programming/examples/hcf-gcd"),
-    LEAST_COMMON_MULTIPLE("Least Common Multiple", "https://www.programiz.com/java-programming/examples/lcm");
+    LEAST_COMMON_MULTIPLE("Least Common Multiple", "https://www.programiz.com/java-programming/examples/lcm"),
+    COUNT_NUMBER_OF_DIGITS("Count Number of Digits in an Integer", "https://www.programiz.com/java-programming/examples/digits-count"),
+    REVERS_A_NUMBER("Java Program to Reverse a Number", "https://www.programiz.com/java-programming/examples/reverse-number"),
+    PALINDROME("Palindrome", "https://www.programiz.com/java-programming/examples/palindrome-number"),
+    PRIME_NUMBER("Prime number check", "https://www.programiz.com/java-programming/examples/prime-number"),
+    ARMSTRONG_NUMBER("Armstrong number", "https://www.programiz.com/java-programming/examples/armstrong-number");
     final String name;
     final String link;
 

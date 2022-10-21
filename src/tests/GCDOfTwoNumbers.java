@@ -3,12 +3,15 @@ package tests;
 import java.util.Scanner;
 
 import common.AlgorithmType;
+import common.BaseTestRunner;
 import common.TestRunner;
 
-public class GCDOfTwoNumbers implements TestRunner
+public class GCDOfTwoNumbers extends BaseTestRunner
 {
   @Override public void run()
   {
+    printDetails();
+
     Scanner scanner = new Scanner(System.in);
     System.out.println("Please enter 2 numbers..");
     int number1= scanner.nextInt();
@@ -29,9 +32,4 @@ public class GCDOfTwoNumbers implements TestRunner
     return AlgorithmType.GRATEST_COMMON_DIVISOR;
   }
 
-  @Override public void printDetails()
-  {
-    System.out.println("name:: "+ getId().getName());
-    System.out.println("Link:: " + getId().getURL());
-  }
 }

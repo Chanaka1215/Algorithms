@@ -4,12 +4,14 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 import common.AlgorithmType;
+import common.BaseTestRunner;
 import common.TestRunner;
 
-public class VowelOrConstant implements TestRunner
+public class VowelOrConstant extends BaseTestRunner
 {
     @Override
     public void run() {
+        printDetails();
         final Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a letter ...");
         String letter = scanner.nextLine().toUpperCase();
@@ -23,9 +25,4 @@ public class VowelOrConstant implements TestRunner
         return AlgorithmType.VOWEL_OR_CONSTANT;
     }
 
-    @Override
-    public void printDetails() {
-        System.out.println("name:: "+ getId().getName());
-        System.out.println("Link:: " + getId().getURL());
-    }
 }

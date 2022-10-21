@@ -3,12 +3,15 @@ package tests;
 import java.util.Scanner;
 
 import common.AlgorithmType;
+import common.BaseTestRunner;
 import common.TestRunner;
 
-public class EvenOdd implements TestRunner
+public class EvenOdd extends BaseTestRunner
 {
     @Override
     public void run() {
+        printDetails();
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please input a number");
         int num = scanner.nextInt();
@@ -20,11 +23,5 @@ public class EvenOdd implements TestRunner
     @Override
     public AlgorithmType getId() {
         return AlgorithmType.EVEN_ODD;
-    }
-
-    @Override
-    public void printDetails() {
-        System.out.println("Name:: " + getId().getName());
-        System.out.println("Name:: " + getId().getURL());
     }
 }

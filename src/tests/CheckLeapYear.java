@@ -3,12 +3,13 @@ package tests;
 import java.util.Scanner;
 
 import common.AlgorithmType;
-import common.TestRunner;
+import common.BaseTestRunner;
 
-public class CheckLeapYear implements TestRunner
+public class CheckLeapYear extends BaseTestRunner
 {
     @Override
     public void run() {
+        printDetails();
         /*
         A leap year is exactly divisible by 4 except for century years (years ending with 00).
         The century year is a leap year only if it is perfectly divisible by 400.
@@ -30,9 +31,4 @@ public class CheckLeapYear implements TestRunner
         return AlgorithmType.FIND_LEAP_YEAR;
     }
 
-    @Override
-    public void printDetails() {
-        System.out.println("name:: "+ getId().getName());
-        System.out.println("Link:: " + getId().getURL());
-    }
 }

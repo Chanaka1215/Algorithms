@@ -3,9 +3,9 @@ package tests;
 import java.util.Scanner;
 
 import common.AlgorithmType;
-import common.TestRunner;
+import common.BaseTestRunner;
 
-public class LCMOfTwoNumber implements TestRunner
+public class LCMOfTwoNumber extends BaseTestRunner
 {
 
   /**
@@ -13,6 +13,8 @@ public class LCMOfTwoNumber implements TestRunner
    */
   @Override public void run()
   {
+    printDetails();
+
     Scanner scanner =  new Scanner(System.in);
     System.out.println("Please input 2 numbers");
     int number1 = scanner.nextInt();
@@ -46,9 +48,4 @@ public class LCMOfTwoNumber implements TestRunner
     return AlgorithmType.LEAST_COMMON_MULTIPLE;
   }
 
-  @Override public void printDetails()
-  {
-    System.out.println("name:: "+ getId().getName());
-    System.out.println("Link:: " + getId().getURL());
-  }
 }
