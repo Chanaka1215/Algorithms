@@ -3,25 +3,13 @@ import java.util.List;
 import common.AlgorithmType;
 import common.BaseTestRunner;
 import common.TestRegistry;
-import tests.CheckLeapYear;
-import tests.CheckPrimeNumber;
-import tests.CountDigitsInAInteger;
-import tests.DisplayFibonacciSeries;
-import tests.EvenOdd;
-import tests.FactorialOfANumber;
-import tests.FindASCIIValue;
-import tests.GCDOfTwoNumbers;
-import tests.LCMOfTwoNumber;
-import tests.Palindrome;
-import tests.QuotientAndRemainder;
-import tests.ReverseANumber;
-import tests.VowelOrConstant;
+import tests.*;
 
 public class Main {
     public static void main(String[] args) {
         registerTest();
         //Replace the Algorithm id here to run a specific algorithm
-        runTestWithId(AlgorithmType.FIND_FACTORIAL);
+        runTestWithId(AlgorithmType.BUILDING_FACING_SUN);
     }
 
     private static void registerTest() {
@@ -39,6 +27,7 @@ public class Main {
         TestRegistry.register(new Palindrome());
         TestRegistry.register(new CheckPrimeNumber());
         TestRegistry.register(new Palindrome());
+        TestRegistry.register(new BuildingFacingSun());
     }
 
     private static void runTestWithId(final AlgorithmType algoId) {
