@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         registerTest();
         //Replace the Algorithm id here to run a specific algorithm
-        runTestWithId(AlgorithmType.BUILDING_FACING_SUN);
+        runTestWithId(AlgorithmType.FIND_LEADERS);
     }
 
     private static void registerTest() {
@@ -28,6 +28,7 @@ public class Main {
         TestRegistry.register(new CheckPrimeNumber());
         TestRegistry.register(new Palindrome());
         TestRegistry.register(new BuildingFacingSun());
+        TestRegistry.register(new FindLeadersInArray());
     }
 
     private static void runTestWithId(final AlgorithmType algoId) {
