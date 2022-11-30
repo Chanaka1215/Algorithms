@@ -16,7 +16,8 @@ public enum AlgorithmType {
     PRIME_NUMBER("Prime number check", "https://www.programiz.com/java-programming/examples/prime-number"),
     ARMSTRONG_NUMBER("Armstrong number", "https://www.programiz.com/java-programming/examples/armstrong-number"),
     BUILDING_FACING_SUN("Count Number of Buildings Facing Sun", "https://www.enjoyalgorithms.com/blog/number-of-buildings-facing-sun/"),
-    FIND_LEADERS("Find all Leaders in an Array", "https://www.enjoyalgorithms.com/blog/leaders-in-an-array/");
+    FIND_LEADERS("Find all Leaders in an Array", "https://www.enjoyalgorithms.com/blog/leaders-in-an-array/"),
+    VALID_MOUNTAIN_ARRAY("Check an Array is a valid mountain or not", "https://www.enjoyalgorithms.com/blog/valid-mountain-array/");
     final String name;
     final String link;
 
